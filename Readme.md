@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Трофимов](https://up.htmlacademy.ru/htmlcss/18/user/11623).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим@@ Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
