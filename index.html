@@ -129,7 +129,7 @@
 
 			<!-- Партнеры -->
 				<section class="partners">
-          <!-- Заголовок забыл -->
+					<h2 class="visually-hidden">Партнеры</h2>
 					<ul class="partners-list">
 						<li><a href="#"><img src="#" alt="HTMLACADEMY"></a></li>
 						<li><a href="#"><img src="#" alt="Borodinski"></a></li>
@@ -144,19 +144,15 @@
 		<footer class="main-footer">
 			<section class="contacts">
 				<h2 class="visually-hidden">Контакты</h2>
-
-				<div class="maps"><!-- Класс .map, а не .maps (а то получается карты) -->
-
+				<div class="map">
+			<!-- Здесь при помощи JS должна будет появиться карта с маркером -->	
 				</div>
 				<div class="contacts">
-					<b>NЁRDS DESIGN STUDIO</b><!-- Лучше <p> - а внутри <strong> вместо <b> -->
-					<br><!-- Лишнее -->
-					<span>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span><!-- <p> -->
+					<p><strong>NЁRDS DESIGN STUDIO</strong></p>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
 					<br>
-          <!-- <p>тел. <a href="tel:+78122757575">тел. +7 (812) 275-75-75<a</p> - так правильней-->
-					<span>тел. +7 (812) 275-75-75</span>
-					<br>
-					<button class="write-to-us">Напишите нам</button><!-- Ссылка с href="write-us.html" -->
+					<a class="write-to-us">Напишите нам</a>
 				</div>
 			</section>
 			<section class="social">
@@ -165,9 +161,10 @@
 					<li><a class="social-button" href="#">Фейсбук</a></li>
 					<li><a class="social-button" href="#">Инстаграм</a></li>
 				</ul>
-        <!-- Нужен общий блок для 2-х нижних тегов, чтобы их можно было спозиционировать правильно -->
-				<b>Давайте дружить, это выгодно!</b><br><!-- <p> - c классом -->
-				<span>Скидка 10% для друзей из социальных сетей.</span><!-- <p> - c классом -->
+				<div class="social-promo">
+					<p class="promo-strong">Давайте дружить, это выгодно!</p>
+					<p class="promo-txt">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</section>
 		</footer>
 
