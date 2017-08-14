@@ -172,13 +172,18 @@
 	<section class="modal modal-contacts">
 		<h2>Напишите нам</h2>
 		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-    <!-- Каждую пару <label> и <input> или <textarea> - надо обернуть в <p> http://prntscr.com/g8109o -->
-			<label for="name">Ваше имя:</label>
-				<input id="name" type="text" placeholder="Представьтесь, пожалуйста"><!-- Нужны атрибуты name -->
-			<label for="email">Ваш e-mail:</label>
-				<input id="email" type="email" placeholder="Для отправки ответа"><!-- Нужны атрибуты name -->
-			<label for="textmessage">Текст письма:</label>
-				<input type="text" id="textmessage" placeholder="В свободной форме"><!-- Нужны атрибуты name -->
+			<p>
+				<label for="name">Ваше имя:</label>
+					<input id="name" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+					<input id="email" type="email" placeholder="Для отправки ответа" name="mail">
+			</p>
+			<p>	
+				<label for="textmessage">Текст письма:</label>
+					<input type="text" id="textmessage" placeholder="В свободной форме" name="txt">
+			</p>
 			<button class="button" type="submit">Отправить</button>
 		</form>
 		<button class="button-close" type="button">Закрыть</button>
