@@ -32,38 +32,165 @@
 		<div class="heading-container">
 			<h1 class="main-heading">Магазин готовых шаблонов</h1>
 		</div>
+
 		<!-- Фильтр товаров -->
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<!-- Фильтр по цене -->
+				<fieldset>
+			        <legend>Стоимость:</legend>
+			        <!-- Не знаю что тут нужно делать, нужна помощь -->
+			    </fieldset>
+			<!-- Фильтр по сетке -->
+				<fieldset>
+			        <legend>Сетка:</legend>
+			        <ul>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
+			                Адаптивная
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed" checked>
+			                Фиксированная
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber" checked>
+			                Резиновая
+			            </li>
+			    	</ul>
+			    </fieldset>
+			<!-- Фильтр по особенностям -->
+				<fieldset>
+			        <legend>Особенности:</legend>
+			        <ul>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+			                Слайдер
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit block">
+			                Блок преимуществ
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+			                Новости
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+			                Галерея
+			            </li>
+			            <li class="filter-option">
+			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
+			                Корзина
+			            </li>
+			    	</ul>
+			    </fieldset>   
+			    <button class="filter-button button" type="submit">Показать</button> 
+			</form>
 
-		<!-- Фильтр по цене -->
-			<fieldset>
-		        <legend>Стоимость:</legend>
-		        <!-- Не знаю что тут нужно делать, нужна помощь -->
-		    </fieldset>
-
-		<!-- Фильтр по сетке -->
-			<fieldset>
-		        <legend>Сетка:</legend>
-		        <ul>
-		            <li class="filter-option">
-		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
-		                Baxter of California
-		            </li>
-		    	</ul>
-		    </fieldset>
-		<!-- Фильтр по особенностям -->
-			<fieldset>
-		        <legend>Особенности:</legend>
-		        <ul>
-		            <li class="filter-option">
-		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
-		                Baxter of California
-		            </li>
-		    	</ul>
-		    </fieldset>    
-
+		<!-- Блок каталога -->	
+			<section class="catalog-container">
+				<h2 class="visually-hidden">Каталог</h2>
+			<!-- Сортировка -->
+				<div class="catalog-sort">
+					<h3 class="sort-header">Сортировка</h3>
+				<!-- Сортировка по параметрам -->
+					<ul>
+						<li class="sort-txt sort-check"><a href="#">По цене</a></li>
+						<li class="sort-txt"><a href="#">По типу</a></li>
+						<li class="sort-txt"><a href="#">По названию</a></li>
+					</ul>
+				<!-- Сортировка по направлению -->
+					<ul>
+						<li class="sort-down"><a href="#">Направление вниз</a></li>
+						<li class="sort-up"><a href="#">Направление вверх</a></li>
+					</ul>
+				</div>
+			<!-- Шаблоны -->		
+				<section class="catalog">
+					<h3 class="visually-hidden">Шаблоны</h3>
+					<ul class="catalog-list">
+						<li class="catalog-item">
+						<!-- Шапка шаблона -->
+							<header class="catalog-item-header">
+								<ul class="cycle-list">
+									<li class="cycle-item"></li>
+									<li class="cycle-item"></li>
+									<li class="cycle-item"></li>
+								</ul>
+							</header>
+							<section class="catalog-item-body">
+								<h4 class="visually-hidden">Шаблон "Седона"</h4>
+								<div class="item-sedona">
+									<img src="#" alt='Шаблон "Седона"'>
+								</div>
+							<!-- Появляется при наведении на блок с классом catalog-item -->
+								<div class="item-price">
+									<p class="price-header">Sedona</p>
+									<p class="price-txt">Информационный сайт для туристов</p>
+									<a class="price-button">						              
+						              <span>Купить</span>
+						            </a>
+								</div>
+							</section>
+						</li>
+					</ul>
+				</section>
+			</section>    
 		</section>
 	</main>
-	</body>
+
+	<!-- Подвал сайта -->
+		<footer class="main-footer">
+			<section class="contacts">
+				<h2 class="visually-hidden">Контакты</h2>
+				<div class="map">
+			<!-- Здесь при помощи JS должна будет появиться карта с маркером -->	
+				</div>
+				<div class="container-contacts">
+					<div class="contacts">
+						<p><strong>NЁRDS DESIGN STUDIO</strong></p>
+						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+						<br>
+						<a class="write-to-us">Напишите нам</a>
+					</div>
+				</div>
+			</section>
+			<section class="social">
+				<h2 class="visually-hidden">Социальные сети</h2>
+				<ul class="social-list">
+					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Инстаграм</a></li>
+				</ul>
+				<div class="social-promo">
+					<p class="promo-strong">Давайте дружить, это выгодно!</p>
+					<p class="promo-txt">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</section>
+		</footer>
+
+	<!-- Форма отправки письма -->
+	<section class="modal modal-contacts">
+		<h2>Напишите нам</h2>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="name">Ваше имя:</label>
+					<input id="name" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+					<input id="email" type="email" placeholder="Для отправки ответа" name="mail">
+			</p>
+			<p>	
+				<label for="textmessage">Текст письма:</label>
+					<input type="text" id="textmessage" placeholder="В свободной форме" name="txt">
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="button-close" type="button">Закрыть</button>
+	</section>
+  </body>
 </html>
