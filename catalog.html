@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Магазин Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
@@ -46,17 +47,23 @@
 				<fieldset>
 			        <legend>Сетка:</legend>
 			        <ul>
-			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
-			                Адаптивная
+			            <li class="filter-option"><!-- 1 инпут+айди а текст в лейбл(атрибут фор как айди у инпута). 2. -->
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
+								Адаптивная
+							</label>
+			            </li>
+			            <li class="filter-option"> <!-- 2-й вариант -->
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed">
+								Фиксированная
+							</label>		                
 			            </li>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed" checked>
-			                Фиксированная
-			            </li>
-			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber" checked>
-			                Резиновая
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber">
+								Резиновая
+							<label>
 			            </li>
 			    	</ul>
 			    </fieldset>
@@ -65,24 +72,34 @@
 			        <legend>Особенности:</legend>
 			        <ul>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-			                Слайдер
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+								Слайдер
+							</label>
 			            </li>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit block">
-			                Блок преимуществ
+							<label>	
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit block">
+								Блок преимуществ
+							</label>
 			            </li>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-			                Новости
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+								Новости
+							</label>
 			            </li>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-			                Галерея
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+								Галерея
+							</label>
 			            </li>
 			            <li class="filter-option">
-			                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
-			                Корзина
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
+								Корзина
+							</label>
 			            </li>
 			    	</ul>
 			    </fieldset>   
@@ -96,13 +113,13 @@
 				<div class="catalog-sort">
 					<h3 class="sort-header">Сортировка</h3>
 				<!-- Сортировка по параметрам -->
-					<ul>
-						<li class="sort-txt sort-check"><a href="#">По цене</a></li>
-						<li class="sort-txt"><a href="#">По типу</a></li>
-						<li class="sort-txt"><a href="#">По названию</a></li>
+					<ul class="sort-type">
+						<li class="sort-txt sort-check"><a href="&price">По цене</a></li>
+						<li class="sort-txt"><a href="&type">По типу</a></li>
+						<li class="sort-txt"><a href="&name">По названию</a></li>
 					</ul>
 				<!-- Сортировка по направлению -->
-					<ul>
+					<ul class="sort-direction">
 						<li class="sort-down"><a href="#">Направление вниз</a></li>
 						<li class="sort-up"><a href="#">Направление вверх</a></li>
 					</ul>
@@ -112,37 +129,23 @@
 					<h3 class="visually-hidden">Шаблоны</h3>
 					<ul class="catalog-list">
 						<li class="catalog-item">
-						<!-- Шапка шаблона -->
-							<header class="catalog-item-header">
-								<ul class="cycle-list">
-									<li class="cycle-item"></li>
-									<li class="cycle-item"></li>
-									<li class="cycle-item"></li>
-								</ul>
-							</header>
-							<section class="catalog-item-body">
-								<h4 class="visually-hidden">Шаблон "Седона"</h4>
-								<div class="item-sedona">
-									<img src="#" alt='Шаблон "Седона"'>
-								</div>
-							<!-- Появляется при наведении на блок с классом catalog-item -->
-								<div class="item-price">
-									<p class="price-header">Sedona</p>
-									<p class="price-txt">Информационный сайт для туристов</p>
-									<a class="price-button">						              
-						              <span>Купить</span>
-						            </a>
-								</div>
-							</section>
+							<img src="#" alt='Шаблон "Седона"'>							
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info">
+								<p class="item-header"><a href="#">Sedona</a></p>
+								<p class="item-description">Информационный сайт для туристов</p>
+								<a class="price-button button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
-					</ul>
+						
+					</ul>			
+				</section>
 					<ul class="pagination-list">
 			          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 			          <li class="pagination-item"><a>2</a></li>
 			          <li class="pagination-item"><a href="#">3</a></li>
 			          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
 			        </ul>
-				</section>
 			</section>    
 		</section>
 	</main>
