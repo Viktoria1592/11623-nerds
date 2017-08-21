@@ -42,7 +42,21 @@
 			<!-- Фильтр по цене -->
 				<fieldset>
 			        <legend>Стоимость:</legend>
-			        <!-- Не знаю что тут нужно делать, нужна помощь -->
+			        <div class="range-controls">
+		                <div class="scale">
+		                	<div class="bar"></div>
+		                </div>
+		                <div class="toggle min-toggle"></div>
+		                <div class="toggle max-toggle"></div>
+            		</div>
+            		<div class="price-controls">
+            			<label>
+		                от <input class="min-price" type="text" value="0">
+		                </label>
+		                <label>
+		                до <input class="max-price" type="text" value="15 000">
+		                </label>
+		            </div>
 			    </fieldset>
 			<!-- Фильтр по сетке -->
 				<fieldset>
