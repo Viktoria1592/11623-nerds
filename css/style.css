@@ -2,7 +2,7 @@ body{
 	margin:0;
 	padding:0;
 	
-	font-family: "Roboto", Arial,sans-serif;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size:16px;
 	line-height:24px;
 	font-weight:400;
@@ -36,20 +36,41 @@ a {
 .site-navigation a:focus,
 .cart-container a:hover,
 .cart-container a:focus {
-  color: #fb565a;
+	color: #fb565a;
 }
+
+.slider{
+	background-color: #eeeeee;
+}
+
+.slide-name{
+	font-size: 55px;
+	line-height: 55px;
+	font-weight:500;
+}
+.slide a{
+	color: #ffffff;
+	background-color: #fb565a;
+}
+.slide a:hover,
+.slide a:focus {
+	background-color: #e74246;
+}
+
 h1{
 	font-weight:normal;
 	color:#000000;
 	font-size:55px;
 	line-height:55px;	
 }
+
 h2{
 	font-weight:normal;
 	color:#000000;
 	font-size:45px;
 	line-height:45px;	
 }
+
 h3{
 	font-weight:bold;
 	color:#000000;
