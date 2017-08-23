@@ -142,7 +142,21 @@ a {
 .partners-list{
 	list-style: none;
 }
+.partners-list a{
+		opacity: 0.2;
+		filter: alpha(Opacity=20);
+}
 
+.partners-list a:hover,
+.partners-list a:focus{
+		opacity: 1;
+		filter: alpha(Opacity=100);
+}
+
+.partners-list a:active{
+		opacity: 0.2;
+		filter: alpha(Opacity=20);
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
