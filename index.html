@@ -64,9 +64,9 @@
 						</div>
 					  <!-- Управляем слайдером -->
 						<div class="slider-control">
-					  		<label for="slide-1">Первый слайд</label> 					<!-- Нужно ли применять скрытие текста??? -->
-							<label for="slide-2">Второй слайд</label>
-							<label for="slide-3">Третий слайд</label>
+					  		<label for="slide-1" class="visually-hidden">Первый слайд</label> 					<!-- Нужно ли применять скрытие текста??? -->
+							<label for="slide-2" class="visually-hidden">Второй слайд</label>
+							<label for="slide-3" class="visually-hidden">Третий слайд</label>
 						</div>
 					</div>
 			</div>
@@ -91,15 +91,15 @@
 								<img src="img/service-app.jpg" width="300" height="146" alt="Два телефона на зелёном фоне">
 							</div>
 							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-							<a href="#" class="btn">Заказать</a>
+							<a href="#" class="btn btn-green">Заказать</a>
 						</li>
-						<li>
+						<li class="third-service">
 							<h3>Презентации</h3>
 							<div class="service-img">
 								<img src="img/service-pres.jpg" width="300" height="146" alt="Мольберт на жёлтом фоне">
 							</div>
 							<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-							<a href="#" class="btn">Заказать</a>
+							<a href="#" class="btn btn-yellow">Заказать</a>
 						</li>
 					</ul>
 				</section>
@@ -109,7 +109,7 @@
 					<h2 class="visually-hidden">О нас</h2>
 				<!-- Левая часть -->
 					<div class="left-about">
-						<p class="about-txt about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+						<p class="about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 						превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<p class="about-txt">Выполняем заказы на разработку:</p>
@@ -194,7 +194,7 @@
 				<label for="textmessage">Текст письма:</label>
 					<input type="text" id="textmessage" placeholder="В свободной форме" name="txt">
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="btn" type="submit">Отправить</button>
 		</form>
 		<button class="button-close" type="button">Закрыть</button>
 	</section>
