@@ -13,6 +13,22 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation{
 	font-size:16px;
 	line-height:30px;
@@ -225,18 +241,33 @@ a {
 	color:#444444;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
+/* Стилизуем каталог */
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+.main-heading{
+	font-size:55px;
+	line-height:55px;
+	font-weight:500;
+	color:black;
+	
+	text-align: center;
+}
 
-  white-space: nowrap;
+.filter fieldset {
+  border: none;
+}
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.filter ul{
+  /* list-style: none; */
+}
+.filter legend{
+	font-size:18px;
+	line-height:30px;
+	font-weight:700;
+	color:black;
+	text-transform: uppercase;
+}
+.filter-option label{
+	font-size:16px;
+	line-height:20px;
+	color:#283136;
 }
