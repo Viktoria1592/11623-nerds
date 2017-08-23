@@ -140,22 +140,89 @@ a {
 	line-height:18px;
 }
 .partners-list{
-	list-style: none;
+	list-style:none;
 }
 .partners-list a{
-		opacity: 0.2;
-		filter: alpha(Opacity=20);
+	opacity:0.2;
+	filter:alpha(Opacity=20);
 }
 
 .partners-list a:hover,
 .partners-list a:focus{
-		opacity: 1;
-		filter: alpha(Opacity=100);
+	opacity:1;
+	filter:alpha(Opacity=100);
 }
 
 .partners-list a:active{
-		opacity: 0.2;
-		filter: alpha(Opacity=20);
+	opacity:0.2;
+	filter:alpha(Opacity=20);
+}
+
+.contacts p,
+.contacts p a{
+	font-size:16px;
+	line-height:18px;
+	color: #666666;
+}
+
+.contacts strong{
+	font-size:18px;
+	line-height:30px;
+	color: black;
+}
+
+.social-list{
+	list-style: none;
+}
+
+.promo-strong{
+	font-size:36px;
+	line-height:36px;
+	font-weight:700;
+	color: black;
+}
+
+.promo-txt{
+	font-size:16px;
+	line-height:22px;
+	color: #444444;
+}
+
+.modal h2{
+	font-size:45px;
+	line-height:45px;
+	font-weight:500;
+	color: black;
+}
+.write-us-form label{
+	font-size:16px;
+	line-height:18px;
+	font-weight:500;
+	color: black;
+}
+.write-us-form input::placeholder{
+	font-size:16px;
+	line-height:18px;
+	font-weight:400;
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form input{		
+	border: 2px solid #d7dcde;
+	border-radius:2px;
+}
+
+.write-us-form input:hover{
+	border: 2px solid #b4b9bb;
+}
+
+.write-us-form input:focus{
+	outline:0;
+	border-color:#000000;
+	
+}
+.write-us-form input:focus::placeholder{
+	color:#444444;
 }
 
 .visually-hidden:not(:focus):not(:active) {
