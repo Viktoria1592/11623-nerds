@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">	
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -55,16 +56,17 @@
 							<a href="#" class="btn btn-slide">Узнать больше</a>
 						</div>
 					  <!-- 3-й слайд -->
-						<div class="slide slide-3"></div>
+						<div class="slide slide-3">
 							<p class="slide-name">Только ночь, только хардкор</p>
 							<p class="slide-description">Работать днем, как все? Мы против этого.<br>
 							Ближе к полуночи работа только начинается.</p>
 							<a href="#" class="btn btn-slide">Узнать больше</a>
+						</div>
 					  <!-- Управляем слайдером -->
 						<div class="slider-control">
-					  		<label for="slide-1">Слайд-1</label>
-							<label for="slide-2">Слайд-2</label>
-							<label for="slide-3">Слайд-3</label>
+					  		<label for="slide-1" class="visually-hidden">Первый слайд</label> 					<!-- Нужно ли применять скрытие текста??? -->
+							<label for="slide-2" class="visually-hidden">Второй слайд</label>
+							<label for="slide-3" class="visually-hidden">Третий слайд</label>
 						</div>
 					</div>
 			</div>
@@ -89,15 +91,15 @@
 								<img src="img/service-app.jpg" width="300" height="146" alt="Два телефона на зелёном фоне">
 							</div>
 							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-							<a href="#" class="btn">Заказать</a>
+							<a href="#" class="btn btn-green">Заказать</a>
 						</li>
-						<li>
+						<li class="third-service">
 							<h3>Презентации</h3>
 							<div class="service-img">
 								<img src="img/service-pres.jpg" width="300" height="146" alt="Мольберт на жёлтом фоне">
 							</div>
 							<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-							<a href="#" class="btn">Заказать</a>
+							<a href="#" class="btn btn-yellow">Заказать</a>
 						</li>
 					</ul>
 				</section>
@@ -107,7 +109,7 @@
 					<h2 class="visually-hidden">О нас</h2>
 				<!-- Левая часть -->
 					<div class="left-about">
-						<p class="about-txt about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+						<p class="about-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
 						превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<p class="about-txt">Выполняем заказы на разработку:</p>
@@ -156,9 +158,9 @@
 					<div class="contacts">
 						<p><strong>NЁRDS DESIGN STUDIO</strong></p>
 						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-						<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+						<p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
 						<br>
-						<a class="write-to-us" href="write-us.html">Напишите нам</a>
+						<a class="btn write-to-us" href="write-us.html">Напишите нам</a>
 					</div>
 				</div>
 			</section>
@@ -192,7 +194,7 @@
 				<label for="textmessage">Текст письма:</label>
 					<input type="text" id="textmessage" placeholder="В свободной форме" name="txt">
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="btn" type="submit">Отправить</button>
 		</form>
 		<button class="button-close" type="button">Закрыть</button>
 	</section>
