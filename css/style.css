@@ -480,11 +480,95 @@ html{
 	min-height: 170px;
 	background:rgba(0, 255, 0, 0.7);
 }
+
 .about{
 	width:1160px;
 	border-bottom:2px solid #eeeeee;
+	padding-top:40px;
 	
 	/* Временно для сетки */
 	min-height:527px;
 	background:rgba(0, 0, 255, 0.4);
 }
+
+.about-container{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.left-about{
+	width: 700px;
+	margin: 0;
+	padding: 0;
+	
+	/* Временно для сетки */
+	min-height: 420px;
+	background:rgba(0, 255, 0, 0.7);
+}
+
+.right-about{
+	width: 400px;
+	margin: 0;
+	padding: 0;
+	
+	/* Временно для сетки */
+	min-height: 420px;
+	background:rgba(0, 255, 0, 0.7);
+}
+
+.partners{
+	width:1160px;
+	border-bottom:2px solid #eeeeee;
+	padding-top:45px;
+	
+	/* Временно для сетки */
+	min-height:182px;
+	background:rgba(0, 0, 255, 0.4);
+}
+
+.partners-list{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+    list-style: none;
+  
+    /* Временно для сетки */
+	min-height:90px;
+	background:rgba(255, 0, 0, 0.1);
+}
+
+.partner-item{
+	width: 260px;
+	position: relative;
+	
+	/* Временно для сетки */
+	min-height: 90px;
+	background:rgba(0, 255, 0, 0.7);
+}
+
+.partner-item:not(:last-child)::after{
+	content: "";
+	width: 2px;
+	height: 52px;
+	position:absolute;
+	left:279px;
+	top:19px;
+
+	background:#eeeeee; 
+}
+
+.main-footer{
+	width:1440px;
+	margin:80px auto;
+	
+	/* Временно для сетки */
+	min-height:632px;
+	background:rgba(0, 255, 0, 0.1);
+}
+.map{
+	width:1440px;
+}
+
