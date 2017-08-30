@@ -568,7 +568,47 @@ html{
 	min-height:632px;
 	background:rgba(0, 255, 0, 0.1);
 }
+
 .map{
 	width:1440px;
+	padding-top: 54px;
+	margin-bottom:65px;
+	
+	/* Временно для сетки */
+	min-height:416px;
+	background:rgba(0, 255, 0, 0.2);
 }
+
+.contact-container{
+	width:319px;
+	
+	/* Временно для сетки */
+	min-height:308px;
+	background:rgba(0, 0, 0, 0.5);
+}
+.social-container{
+	display: flex;
+
+    /* Временно для сетки */
+	min-height:85px;	
+}
+.social-list{
+	width:280px;
+	margin: 0 120px 0 0;
+	padding: 0;
+
+    list-style: none;
+	
+	/* Временно для сетки */
+	background:rgba(0, 255, 0, 0.7);
+}
+
+.social-promo{
+	width:600px;
+	
+	/* Временно для сетки */
+	background:rgba(0, 255, 0, 0.7);
+}
+
+
 
