@@ -404,42 +404,59 @@ html{
 .container{
 	width:1200px;
 	margin:0 auto;
-	background:rgba(0, 255, 0, 0.4);
+	/*background:rgba(0, 255, 0, 0.4);*/
 	padding:0 20px;
 }
 
 .main-navigation{
 	display:flex;
-	padding-top:49px;
+
+	min-height: 130px;
 }
 
 .main-header-logo{
 	width:160px;
 	margin-right:202px;
+	padding-top: 50px;
 	
 	 /* Временно для сетки */
 	min-height:65px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
+
 .site-navigation{
+	display:flex;
 	width:640px;
-	margin-right:20px;
+	margin: 0;
+	padding: 0;
+	padding-top: 75px;
+
+    list-style: none;
 	
 	 /* Временно для сетки */
-	min-height:30px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
+.site-navigation li{
+	margin-right: 45px;
+}
+
 .cart-container{
 	width:140px;
-	min-height:30px;
-	background:rgba(0, 0, 255, 0.4);
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	text-align: right;
+	padding-top: 75px;
+
+	/* Временно для сетки */
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
 
 .container-slider{
-	min-height:431px;
+	min-height:415px;
 	
 	 /* Временно для сетки */
-	padding-top:85px;
+	padding-top:65px;
 	background:rgba(0, 255, 0, 0.7);
 }
 
