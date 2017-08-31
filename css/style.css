@@ -146,6 +146,8 @@ a {
 }
 
 .left-list-about, .about-list{
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
@@ -453,11 +455,11 @@ html{
 }
 
 .container-slider{
-	min-height:415px;
-	
-	 /* Временно для сетки */
 	padding-top:65px;
-	background:rgba(0, 255, 0, 0.7);
+
+	/* Временно для сетки */
+	min-height:415px;
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .slide{
@@ -465,7 +467,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height:266px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
 
 .services{
@@ -475,7 +477,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height:509px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
 
 .services-list{
@@ -495,7 +497,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height: 170px;
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .about{
@@ -505,7 +507,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height:527px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
 
 .about-container{
@@ -521,7 +523,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height: 420px;
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .right-about{
@@ -531,7 +533,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height: 420px;
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .partners{
@@ -541,7 +543,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height:182px;
-	background:rgba(0, 0, 255, 0.4);
+	/*background:rgba(0, 0, 255, 0.4);*/
 }
 
 .partners-list{
@@ -554,7 +556,7 @@ html{
   
     /* Временно для сетки */
 	min-height:90px;
-	background:rgba(255, 0, 0, 0.1);
+	/*background:rgba(255, 0, 0, 0.1);*/
 }
 
 .partner-item{
@@ -563,7 +565,7 @@ html{
 	
 	/* Временно для сетки */
 	min-height: 90px;
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .partner-item:not(:last-child)::after{
@@ -583,25 +585,28 @@ html{
 	
 	/* Временно для сетки */
 	min-height:632px;
-	background:rgba(0, 255, 0, 0.1);
+	/*background:rgba(0, 255, 0, 0.1);*/
 }
 
 .map{
 	width:1440px;
-	padding-top: 54px;
 	margin-bottom:65px;
+	position: relative;
 	
 	/* Временно для сетки */
-	min-height:416px;
-	background:rgba(0, 255, 0, 0.2);
+	
 }
 
 .contact-container{
 	width:319px;
-	
+	position: absolute;
+	top: 54px;
+	left:140px;
+	padding:30px 50px;
+
+	background:rgba(255, 255, 255, 1);
 	/* Временно для сетки */
 	min-height:308px;
-	background:rgba(0, 0, 0, 0.5);
 }
 .social-container{
 	display: flex;
@@ -617,14 +622,14 @@ html{
     list-style: none;
 	
 	/* Временно для сетки */
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 .social-promo{
 	width:600px;
 	
 	/* Временно для сетки */
-	background:rgba(0, 255, 0, 0.7);
+	/*background:rgba(0, 255, 0, 0.7);*/
 }
 
 
