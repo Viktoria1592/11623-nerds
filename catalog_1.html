@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy:Магазин Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <!-- Шапка -->
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Нёрдс»">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="index.html">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p class="cart-container">
+					<a class="cart" href="#">Корзина</a>
+				</p>
+			</nav>
+		</div>
+	</header>
+
+  <!-- Тело -->
+	<main>
+		<!-- Заголовок -->
+		<div class="heading-container">
+			<div class="container">
+				<h1 class="main-heading">Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+
+
+		<!-- Фильтр товаров -->
+	<div class="container">
+	<div class="catalog-columns">
+		<section class="filters"></section>
+
+		<!-- Блок каталога -->	
+			<section class="catalog-container">
+				<h2 class="visually-hidden">Каталог</h2>
+			<!-- Сортировка -->
+				<div class="catalog-sort">
+				<!-- Сортировка по параметрам -->
+					<ul class="sort-type"></ul>
+				<!-- Сортировка по направлению -->
+					<ul class="sort-direction"></ul>
+				</div>
+			<!-- Шаблоны -->		
+				<section class="catalog">
+					<h3 class="visually-hidden">Шаблоны</h3>
+					<ul class="catalog-list">
+						<li class="catalog-item">							
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+						<li class="catalog-item">													
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+						<li class="catalog-item">						
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+						<li class="catalog-item">						
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+						
+						<li class="catalog-item">							
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+						
+						<li class="catalog-item">						
+					<!-- Появляется при наведении на блок с классом catalog-item -->
+							<div class="item-info"></div>
+						</li>
+					</ul>			
+				</section>
+					<ul class="pagination-list">
+			          <li class="pagination-item"></li>
+			          <li class="pagination-item"></li>
+			          <li class="pagination-item"></li>
+			          <li class="pagination-item pagination-item-next"></li>
+			        </ul>
+			</section>
+		</div>    
+		</div>
+	</main>
+
+	<!-- Подвал сайта -->
+		<footer class="main-footer">
+			<section class="contacts">
+				<h2 class="visually-hidden">Контакты</h2>
+				<div class="map">
+					<img src="img/map-marker.jpg" width="1440" height="416" alt="Офис компании по адресу г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<!-- Здесь при помощи JS должна будет появиться карта с маркером -->	
+				</div>
+				<div class="container">
+					<div class="contacts">
+						<p><strong>NЁRDS DESIGN STUDIO</strong></p>
+						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+						<br>
+						<a class="btn write-to-us" href="write-us.html">Напишите нам</a>
+					</div>
+				</div>
+			</section>
+			<section class="social container">
+				<h2 class="visually-hidden">Социальные сети</h2>
+				<ul class="social-list">
+					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Инстаграм</a></li>
+				</ul>
+				<div class="social-promo">
+					<p class="promo-strong">Давайте дружить, это выгодно!</p>
+					<p class="promo-txt">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</section>
+		</footer>
+
+	<!-- Форма отправки письма -->
+	<section class="modal modal-contacts">
+		<h2>Напишите нам</h2>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="name">Ваше имя:</label>
+					<input id="name" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+					<input id="email" type="email" placeholder="Для отправки ответа" name="mail">
+			</p>
+			<p>	
+				<label for="textmessage">Текст письма:</label>
+					<input type="text" id="textmessage" placeholder="В свободной форме" name="txt">
+			</p>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+		<button class="button-close" type="button">Закрыть</button>
+	</section>
+  </body>
+</html>
