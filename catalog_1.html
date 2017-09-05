@@ -41,59 +41,181 @@
 
 		<!-- Фильтр товаров -->
 	<div class="container">
-	<div class="catalog-columns">
-		<section class="filters"></section>
+		<div class="catalog-columns">
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<!-- Фильтр по цене -->
+				<fieldset>
+			        <legend>Стоимость:</legend>
+			        <div class="range-controls">
+		                <div class="scale">
+		                	<div class="bar"></div>
+		                </div>
+		                <div class="toggle min-toggle"></div>
+		                <div class="toggle max-toggle"></div>
+            		</div>
+            		<div class="price-controls">
+            			<label>
+		                от <input class="min-price" type="text" value="0">
+		                </label>
+		                <label>
+		                до <input class="max-price" type="text" value="15 000">
+		                </label>
+		            </div>
+			    </fieldset>
+			<!-- Фильтр по сетке -->
+				<fieldset>
+			        <legend>Сетка:</legend>
+			        <ul>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
+								Адаптивная
+							</label>
+			            </li>
+			            <li class="filter-option"> 
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed">
+								Фиксированная
+							</label>		                
+			            </li>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber">
+								Резиновая
+							<label>
+			            </li>
+			    	</ul>
+			    </fieldset>
+			<!-- Фильтр по особенностям -->
+				<fieldset>
+			        <legend>Особенности:</legend>
+			        <ul>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+								Слайдер
+							</label>
+			            </li>
+			            <li class="filter-option">
+							<label>	
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit block">
+								Блок преимуществ
+							</label>
+			            </li>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+								Новости
+							</label>
+			            </li>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+								Галерея
+							</label>
+			            </li>
+			            <li class="filter-option">
+							<label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
+								Корзина
+							</label>
+			            </li>
+			    	</ul>
+			    </fieldset>   
+			    <button class="btn filter-button" type="submit">Показать</button> 
+			</form>
+		</section>
 
 		<!-- Блок каталога -->	
 			<section class="catalog-container">
 				<h2 class="visually-hidden">Каталог</h2>
 			<!-- Сортировка -->
 				<div class="catalog-sort">
+					<h3 class="sort-header">Сортировать:</h3>
 				<!-- Сортировка по параметрам -->
-					<ul class="sort-type"></ul>
+					<ul class="sort-type">
+						<li class="sort-txt sort-check"><a href="/sort=price">По цене</a></li>
+						<li class="sort-txt"><a href="/sort=type">По типу</a></li>
+						<li class="sort-txt"><a href="/sort=name">По названию</a></li>
+					</ul>
 				<!-- Сортировка по направлению -->
-					<ul class="sort-direction"></ul>
+					<ul class="sort-direction">
+						<li class="sort-down sort-check"><a href="/sort=down">Направление вниз</a></li>
+						<li class="sort-up"><a href="/sort=up">Направление вверх</a></li>
+					</ul>
 				</div>
 			<!-- Шаблоны -->		
 				<section class="catalog">
 					<h3 class="visually-hidden">Шаблоны</h3>
 					<ul class="catalog-list">
-						<li class="catalog-item">							
+						<li class="catalog-item">	
+							<img src="img/img-sedona.jpg" width="360" height="576" alt='Шаблон "Седона"'>						
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">Sedona</a></p>
+								<p class="item-description">Информационный сайт для туристов</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
-						<li class="catalog-item">													
+						<li class="catalog-item">
+							<img src="img/img-pink.jpg" width="360" height="576" alt='Шаблон "Пинк"'>										
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">Pink App</a></p>
+								<p class="item-description">Продуктовый лендинг приложения для iOS и Android</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
-						<li class="catalog-item">						
+						<li class="catalog-item">
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt='Шаблон "Барбершоп"'>						
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">Barbershop</a></p>
+								<p class="item-description">Сайт салоны красоты. Для мужчин, да.</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
-						<li class="catalog-item">						
+						<li class="catalog-item">
+							<img src="img/img-mishka.jpg" width="360" height="576" alt='Шаблон "Мишка"'>						
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">Mishka</a></p>
+								<p class="item-description">Интернет-магазин вязаных игрушек</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
 						
-						<li class="catalog-item">							
+						<li class="catalog-item">
+							<img src="img/img-aplus.jpg" width="360" height="576" alt='Шаблон "А плюс"'>							
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">A Plus</a></p>
+								<p class="item-description">Лендинг курсов повышения квалификации</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
 						
-						<li class="catalog-item">						
+						<li class="catalog-item">
+							<img src="img/img-kvast.jpg" width="360" height="576" alt='Шаблон "Кваст"'>						
 					<!-- Появляется при наведении на блок с классом catalog-item -->
-							<div class="item-info"></div>
+							<div class="item-info">
+								<p class="item-header"><a href="#">Кваст</a></p>
+								<p class="item-description">Промо-сайт производителя крафтового кваса</p>
+								<a class="btn price-button" href="#">9 900 Руб.</a>
+							</div>
 						</li>
 					</ul>			
 				</section>
-				<ul class="pagination-list">
-			        <li class="pagination-item"></li>
-			        <li class="pagination-item"></li>
-			        <li class="pagination-item"></li>
-			        <li class="pagination-item pagination-item-next"></li>
-			    </ul>
+					<ul class="pagination-list">
+				        <li class="pagination-item"><a href="#" class="btn filter-button pagination-item-current">1</a></li>
+				        <li class="pagination-item"><a class="btn filter-button">2</a></li>
+				        <li class="pagination-item"><a href="#" class="btn filter-button">3</a></li>
+				        <li class="pagination-item pagination-item-next"><a href="#" class="btn filter-button">Следующая</a></li>
+			        </ul>
 			</section>
-		</div>    
+			</div>    
 		</div>
 	</main>
 
