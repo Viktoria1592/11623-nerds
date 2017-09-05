@@ -318,9 +318,14 @@ input[type="radio"].visually-hidden {
 
 .partners{
 	width:1160px;
-	border-bottom:2px solid #eeeeee;
+
 	padding: 50px 0 34px;
+	margin-bottom: 80px;
+
+	border-bottom:2px solid #eeeeee;
 }
+	
+
 
 .partners-list{
 	display: flex;
@@ -370,13 +375,13 @@ input[type="radio"].visually-hidden {
 
 .main-footer{
 	width:1440px;
-	margin:80px auto 0 auto;
+	margin:0 auto;
 	position: relative;
 }
 
 .map{
 	width:1440px;
-	margin-bottom:35px;
+	margin-bottom: 68px;
 	position: relative;
 }
 
@@ -385,7 +390,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 54px;
 	left:140px;
-	padding:30px 50px 55px;
+	padding:30px 50px 47px;
 
 	background:rgba(255, 255, 255, 1);
 }
@@ -440,7 +445,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-strong{
-	margin: 33px 0 10px;
+	margin: 0 0 10px;
 
 	font-size:36px;
 	line-height:36px;
@@ -570,7 +575,7 @@ input[type="radio"].visually-hidden {
 /* ----- Сеточные стили внутренней страницы ----- */
 
 .heading-container {
-	padding: 30px 0 70px;
+	padding: 40px 0 70px;
 	margin-bottom: 55px;
 	background-color:#eeeeee;	
 }
@@ -594,6 +599,7 @@ input[type="radio"].visually-hidden {
 .catalog-columns{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 63px;
 }
 
 .catalog-container{
@@ -610,7 +616,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-sort{
 	display: flex;
-	margin-bottom: 50px;
+	margin-bottom: 47px;
 
 	/*Временно для сетки*/
 	min-height: 25px;
@@ -635,6 +641,20 @@ input[type="radio"].visually-hidden {
 .catalog-item{
 	width: 360px;
 	height: 616px;
+	margin-bottom: 33px;
 
+	/*Временно для сетки*/
+	background-color: rgba(0, 255, 0, 0.4);
+}
+
+.pagination-list{
+	margin: 0;
+	margin-top: auto;
+	padding: 0;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+	min-height: 50px;
 	background-color: rgba(0, 255, 0, 0.4);
 }
