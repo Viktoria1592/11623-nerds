@@ -416,8 +416,6 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-container{
-	z-index: 10;
-    position: relative;
     margin: 0 auto;
     width: 1200px;
     padding: 0 20px;
@@ -425,10 +423,12 @@ input[type="radio"].visually-hidden {
 }
 
 .contact{
+	z-index: 10;
+    position: relative;
 	padding: 30px 50px 47px;
-    background: rgba(255, 255, 255, 1);
     width: 319px;
 
+    background: rgba(255, 255, 255, 1);
 }
 
 .contact-name-company{
