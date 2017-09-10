@@ -45,14 +45,14 @@
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 			<!-- Фильтр по цене -->
-				<fieldset>
-			        <legend>Стоимость:</legend>
+				<fieldset class="price-conteiner">
+			        <legend class="price-titel">Стоимость:</legend>
 			        <div class="range-controls">
 		                <div class="scale">
 		                	<div class="bar"></div>
 		                </div>
-		                <div class="toggle min-toggle"></div>
-		                <div class="toggle max-toggle"></div>
+		                <div class="toggle toggle-min"></div>
+		                <div class="toggle toggle-max"></div>
             		</div>
             		<div class="price-controls">
             			<label>
@@ -64,9 +64,9 @@
 		            </div>
 			    </fieldset>
 			<!-- Фильтр по сетке -->
-				<fieldset>
+				<fieldset class="option-container">
 			        <legend>Сетка:</legend>
-			        <ul class=" ">
+			        <ul>
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
@@ -88,7 +88,7 @@
 			    	</ul>
 			    </fieldset>
 			<!-- Фильтр по особенностям -->
-				<fieldset>
+				<fieldset class="option-container">
 			        <legend>Особенности:</legend>
 			        <ul>
 			            <li class="filter-option">
@@ -209,7 +209,7 @@
 				</section>
 					<ul class="pagination-list">
 				        <li class="pagination-item"><a href="#" class="btn pagination-button pagination-item-current">1</a></li>
-				        <li class="pagination-item"><a class="btn pagination-button">2</a></li>
+				        <li class="pagination-item"><a href="#" class="btn pagination-button">2</a></li>
 				        <li class="pagination-item"><a href="#" class="btn pagination-button">3</a></li>
 				        <li class="pagination-item pagination-item-next"><a href="#" class="btn pagination-button pagination-button-next">Следующая</a></li>
 			        </ul>
