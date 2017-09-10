@@ -70,18 +70,21 @@
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="adaptive" checked>
+								<span class="radio-indicator"></span>
 								Адаптивная
 							</label>
 			            </li>
 			            <li class="filter-option"> 
 							<label>
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="fixed">
+								<span class="radio-indicator"></span>
 								Фиксированная
 							</label>		                
 			            </li>
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-group" value="rubber">
+								<span class="radio-indicator"></span>
 								Резиновая
 							<label>
 			            </li>
@@ -94,30 +97,35 @@
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+								<span class="checkbox-indicator"></span>
 								Слайдер
 							</label>
 			            </li>
 			            <li class="filter-option">
 							<label>	
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefit block">
+								<span class="checkbox-indicator"></span>
 								Блок преимуществ
 							</label>
 			            </li>
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+								<span class="checkbox-indicator"></span>
 								Новости
 							</label>
 			            </li>
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+								<span class="checkbox-indicator"></span>
 								Галерея
 							</label>
 			            </li>
 			            <li class="filter-option">
 							<label>
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
+								<span class="checkbox-indicator"></span>
 								Корзина
 							</label>
 			            </li>
@@ -141,8 +149,22 @@
 					</ul>
 				<!-- Сортировка по направлению -->
 					<ul class="sort-direction">
-						<li class="sort-down sort-check"><a href="/sort=down"><span class="visually-hidden">Направление вниз</span></a></li>
-						<li class="sort-up"><a href="/sort=up"><span class="visually-hidden">Направление вверх</span></a></li>
+						<li class="sort-dir-container sort-check">
+							<a class="sort-down" href="/sort=down">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 10L0 0h11"/>
+								</svg>
+								<span class="visually-hidden">Направление вниз</span>
+							</a>
+						</li>
+						<li class="sort-dir-container">
+							<a  class="sort-up" href="/sort=up">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 0L0 10h11z"/>
+								</svg>
+								<span class="visually-hidden">Направление вверх</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			<!-- Шаблоны -->		

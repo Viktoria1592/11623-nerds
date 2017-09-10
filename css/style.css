@@ -791,8 +791,12 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 15px;
 }
 
-.option-container .filter-option{
+.option-container label{
+	position: relative;
+
 	padding-left: 35px;
+
+	cursor: pointer;
 }
 
 .option-container .filter-option:not(:last-of-type){
@@ -807,10 +811,72 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 50px;
 }
 
-.filter-option label{
-	font-size:16px;
-	line-height:20px;
-	color:#283136;
+		/*ОФОРМЛЯЕМ РАДИО-КНОПКИ*/
+
+.filter-option input[type="radio"] + .radio-indicator{
+	position: absolute;
+	top: -4px;
+	left: 0;
+
+	width: 25px;
+	height: 25px;
+
+	background: url("../img/radio-off.svg") no-repeat 0 0;
+	opacity: 0.4; 
+}
+
+.filter-option input[checked] + .radio-indicator{
+	background: url("../img/radio-on.svg") no-repeat 0 0;
+	opacity: 0.4; 
+}
+
+.option-container label:hover,
+.option-container label:focus{
+	color: black;
+	font-weight: 500;
+}
+
+.option-container label:hover .radio-indicator,
+.option-container label:focus .radio-indicator{
+	opacity: 1;
+}
+
+.filter-option input[type="radio"]:checked + .radio-indicator{
+	background: url("../img/radio-on.svg") no-repeat 0 0;
+}
+
+		/*ОФОРМЛЯЕМ ЧЕК-БОКСЫ*/
+
+.filter-option input[type="checkbox"] + .checkbox-indicator{
+	position: absolute;
+	top: -2px;
+	left: 0;
+
+	width: 28px;
+	height: 23px;
+
+	background: url("../img/checkbox-off.svg") no-repeat 0 0;
+	opacity: 0.4; 
+}
+
+.filter-option input[checked] + .checkbox-indicator{
+	background: url("../img/checkbox-on.svg") no-repeat 0 0;
+	opacity: 0.4; 
+}
+
+.option-container label:hover,
+.option-container label:focus{
+	color: black;
+	font-weight: 500;
+}
+
+.option-container label:hover .checkbox-indicator,
+.option-container label:focus .checkbox-indicator{
+	opacity: 1;
+}
+
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator{
+	background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
 .filter-button{
@@ -819,7 +885,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
 
 	color:black;
-	font-weight:700;
+	font-weight:500;
 	
 	background-color:#eeeeee;
 }
@@ -847,7 +913,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sort{
-	margin-bottom: 52px;
+	margin-bottom: 55px;
 	align-items: baseline;
 }
 
@@ -867,11 +933,31 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sort .sort-direction{
-	margin-left: 45px;
-	width: 45px;
-	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 48px;
+	width: 42px;
+}
 
-	background: rgba(0, 255, 0, 0.3);
+.sort-dir-container{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.sort-up path{
+	fill: #a6a6a6;
+	opacity: 0.2;
+}
+
+.sort-dir-container:hover path{
+	fill: #a6a6a6;
+	opacity: 1;
+}
+
+.sort-dir-container:active path{
+	fill: #231F20;
+	opacity: 1;
 }
 
 .catalog-columns{
