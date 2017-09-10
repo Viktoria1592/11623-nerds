@@ -142,6 +142,12 @@ input[type="radio"].visually-hidden {
 	color:#fb565a;
 }
 
+.site-navigation-current a:hover,
+.site-navigation-current a:focus{
+	color: black;
+	cursor: default;
+}
+
 .main-navigation a:active {
 	color:rgba(0, 0, 0, 0.3);
 }
@@ -544,10 +550,12 @@ input[type="radio"].visually-hidden {
 	width: 960px;
 	box-shadow: 0 20px 75px 0 #000101;
 	position: absolute;
-	left: 240px;
+	left: 50%;
 	bottom: 180px;
+	margin-left: -480px;
 	padding: 67px 100px 84px;
-
+	z-index: 1000;
+	
 	display: none;
 	background-color: white;
 }
@@ -640,6 +648,8 @@ input[type="radio"].visually-hidden {
 	outline: none;
 	
 	font-size: 0;
+
+	cursor: pointer;
 }
 
 .button-close:hover,
@@ -650,6 +660,10 @@ input[type="radio"].visually-hidden {
 .button-close:active {
 	opacity: 0.1;
 
+}
+
+.write-us-form .btn{
+	width: 260px;
 }
 
 /*!Стили каталога!*/
@@ -695,7 +709,6 @@ input[type="radio"].visually-hidden {
 	font-weight:700;
 	color:black;
 	text-transform: uppercase;
-
 }
 
 .filter-option label{
@@ -791,14 +804,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 15px;
 }
 
-.option-container label{
-	position: relative;
-
-	padding-left: 35px;
-
-	cursor: pointer;
-}
-
 .option-container .filter-option:not(:last-of-type){
 	margin-bottom: 15px;
 }
@@ -811,11 +816,21 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 50px;
 }
 
+.option-container span{
+	position: relative;
+
+	padding-left: 35px;
+
+	cursor: pointer;
+}
+
 		/*ОФОРМЛЯЕМ РАДИО-КНОПКИ*/
 
-.filter-option input[type="radio"] + .radio-indicator{
+.filter-option input[type="radio"] + .radio-indicator:before{
+	content: "";
+
 	position: absolute;
-	top: -4px;
+	top: -3px;
 	left: 0;
 
 	width: 25px;
@@ -825,29 +840,34 @@ input[type="radio"].visually-hidden {
 	opacity: 0.4; 
 }
 
-.filter-option input[checked] + .radio-indicator{
-	background: url("../img/radio-on.svg") no-repeat 0 0;
-	opacity: 0.4; 
-}
-
 .option-container label:hover,
 .option-container label:focus{
 	color: black;
-	font-weight: 500;
 }
 
-.option-container label:hover .radio-indicator,
-.option-container label:focus .radio-indicator{
+.option-container label:hover .radio-indicator:before,
+.option-container label:focus .radio-indicator:before{
 	opacity: 1;
 }
 
-.filter-option input[type="radio"]:checked + .radio-indicator{
+.filter-option input[type="radio"]:checked + .radio-indicator:before{
 	background: url("../img/radio-on.svg") no-repeat 0 0;
+}
+
+.filter-option input[type="radio"]:disabled + .radio-indicator:before{
+	opacity: 0.1;
+}
+
+.filter-option input[type="radio"]:disabled + .radio-indicator{
+	color: rgba(40, 49, 54, 0.3);
+	cursor: default;
 }
 
 		/*ОФОРМЛЯЕМ ЧЕК-БОКСЫ*/
 
-.filter-option input[type="checkbox"] + .checkbox-indicator{
+.filter-option input[type="checkbox"] + .checkbox-indicator:before{
+	content: "";
+
 	position: absolute;
 	top: -2px;
 	left: 0;
@@ -859,25 +879,24 @@ input[type="radio"].visually-hidden {
 	opacity: 0.4; 
 }
 
-.filter-option input[checked] + .checkbox-indicator{
-	background: url("../img/checkbox-on.svg") no-repeat 0 0;
-	opacity: 0.4; 
-}
-
-.option-container label:hover,
-.option-container label:focus{
-	color: black;
-	font-weight: 500;
-}
-
-.option-container label:hover .checkbox-indicator,
-.option-container label:focus .checkbox-indicator{
+.option-container label:hover .checkbox-indicator:before,
+.option-container label:focus .checkbox-indicator:before{
 	opacity: 1;
 }
 
-.filter-option input[type="checkbox"]:checked + .checkbox-indicator{
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator:before{
 	background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
+
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator:before{
+	opacity: 0.1;
+}
+
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator{
+	color: rgba(40, 49, 54, 0.3);
+	cursor: default;
+}
+
 
 .filter-button{
 	width: 260px;
@@ -898,6 +917,8 @@ input[type="radio"].visually-hidden {
 .filter-button:active{
 	background-color:#d5d5d5;
 	outline:0;
+
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-sort{
@@ -950,12 +971,12 @@ input[type="radio"].visually-hidden {
 	opacity: 0.2;
 }
 
-.sort-dir-container:hover path{
+.sort-dir-container:not(.sort-check):hover path{
 	fill: #a6a6a6;
 	opacity: 1;
 }
 
-.sort-dir-container:active path{
+.sort-dir-container:not(.sort-check):active path{
 	fill: #231F20;
 	opacity: 1;
 }
@@ -982,6 +1003,11 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
+.sort-txt:not(.sort-check):hover a{
+	color:rgba(0, 0, 0, 0.6);
+}
+
+.sort-txt:not(.sort-check):active a,
 .sort-check a{
 	color:rgba(0, 0, 0, 1);
 }
@@ -1088,6 +1114,7 @@ input[type="radio"].visually-hidden {
 	line-height:18px;
 	font-weight:500;
 	color:black;
+	text-align: center;
 	text-transform: uppercase;
 	
 	background-color:#eeeeee;
@@ -1097,17 +1124,19 @@ input[type="radio"].visually-hidden {
 	min-width: 260px;
 }
 
-.pagination-button:hover,
-.pagination-button:focus {
+.pagination-button:not(.pagination-item-current):hover,
+.pagination-button:not(.pagination-item-current):focus {
 	background-color:#dfdfdf;
 }
 
 .pagination-button:active{
 	background-color:#d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item-current{
 	padding: 13px 5px;
 	background:white;
 	border:3px solid #dbdbdb;
+	cursor: default;
 }
