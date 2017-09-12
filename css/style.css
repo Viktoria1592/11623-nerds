@@ -92,9 +92,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	padding-bottom: 3px;
 	    
-	border-bottom: 2px solid #fb565a;
-    
-    
+	border-bottom: 2px solid #fb565a;   
 }
 
 .site-navigation li{
@@ -154,6 +152,10 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo:not(.current-logo):active{
 	opacity: 0.3;
+}
+
+.main-header-logo:not(.current-logo):hover{
+	opacity: 0.8;
 }
 
 .slider{
