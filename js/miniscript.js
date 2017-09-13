@@ -1,0 +1,1 @@
+var link=document.querySelector(".write-to-us"),popup=document.querySelector(".modal"),close=popup.querySelector(".button-close"),form=popup.querySelector(".write-us-form");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});
