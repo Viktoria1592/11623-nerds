@@ -734,7 +734,7 @@ input[type="radio"].visually-hidden {
     padding-left: 35px;
     cursor: pointer;
 }
-.filter-option input[type="radio"] + .radio-indicator:before {
+.filter-option input[type="radio"] + .radio-indicator::before {
     content: "";
     position: absolute;
     top: -3px;
@@ -748,21 +748,21 @@ input[type="radio"].visually-hidden {
 .option-container label:focus {
     color: black;
 }
-.option-container label:hover .radio-indicator:before,
-.option-container label:focus .radio-indicator:before {
+.option-container label:hover .radio-indicator::before,
+.option-container label:focus .radio-indicator::before {
     opacity: 1;
 }
-.filter-option input[type="radio"]:checked + .radio-indicator:before {
+.filter-option input[type="radio"]:checked + .radio-indicator::before {
     background: url("../img/radio-on.svg") no-repeat 0 0;
 }
-.filter-option input[type="radio"]:disabled + .radio-indicator:before {
+.filter-option input[type="radio"]:disabled + .radio-indicator::before {
     opacity: 0.1;
 }
 .filter-option input[type="radio"]:disabled + .radio-indicator {
     color: rgba(40, 49, 54, 0.3);
     cursor: default;
 }
-.filter-option input[type="checkbox"] + .checkbox-indicator:before {
+.filter-option input[type="checkbox"] + .checkbox-indicator::before {
     content: "";
     position: absolute;
     top: -2px;
@@ -772,14 +772,14 @@ input[type="radio"].visually-hidden {
     background: url("../img/checkbox-off.svg") no-repeat 0 0;
     opacity: 0.4;
 }
-.option-container label:hover .checkbox-indicator:before,
-.option-container label:focus .checkbox-indicator:before {
+.option-container label:hover .checkbox-indicator::before,
+.option-container label:focus .checkbox-indicator::before {
     opacity: 1;
 }
-.filter-option input[type="checkbox"]:checked + .checkbox-indicator:before {
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator::before {
     background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
-.filter-option input[type="checkbox"]:disabled + .checkbox-indicator:before {
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator::before {
     opacity: 0.1;
 }
 .filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
@@ -897,7 +897,7 @@ input[type="radio"].visually-hidden {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
-.catalog-item:after {
+.catalog-item::after {
     content: "";
     width: 14px;
     height: 14px;
